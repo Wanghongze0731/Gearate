@@ -40,8 +40,8 @@ function preload() {
 }
 
 function setup() {
-  // createCanvas(windowWidth,windowHeight);
-  createCanvas(1920,1080);
+  createCanvas(windowWidth,windowHeight);
+  // createCanvas(1920,1080);
   imageMode (CENTER)
   textFont("Courier New"); // 设置字体
   textSize(18); // 设置字体大小
