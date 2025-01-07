@@ -1,0 +1,453 @@
+[
+    {
+        "__typename": "Standalone",
+        "object_goya_id": "24",
+        "title": "Streaming media acceleration",
+        "type": "",
+        "date": "",
+        "websiteLink": "/sketch/exhibition-your-chance-encounter-2009_2/",
+        "images": [
+            {
+                "low": "/Gearate/images/1.jpg",
+                "high": "/Gearate/images/1.jpg"
+            }
+        ],
+        "tags": []
+    },
+    {
+        "__typename": "Artwork",
+        "object_goya_id": "271",
+        "title": "The radio experience is diminished",
+        "type": "",
+        "date": "",
+        "websiteLink": "/artwork/shadow-sphere-2009/",
+        "images": [
+            {
+                "low": "/Gearate/images/2.jpg",
+                "high": "/Gearate/images/2.jpg"
+            }
+        ],
+        "tags": [
+            "crystalline",
+            "darkness",
+            "illuminated",
+            "multiple reflections",
+            "optical device",
+            "shadow",
+            "sphere",
+            "tunnel"
+        ],
+        "materials": "HMI lamp, tripod, steel, foamcore mirror, projection foil, wood"
+    },
+    {
+        "__typename": "Artwork",
+        "object_goya_id": "4728",
+        "title": "Information storage and exchange are accelerated",
+        "type": "",
+        "date": "",
+        "websiteLink": "/artwork/map-for-navigating-memory-2022/",
+        "images": [
+            {
+                "low": "/Gearate/images/3.jpg",
+                "high": "/Gearate/images/3.jpg"
+            }
+        ],
+        "tags": [
+            "circle",
+            "colour",
+            "navigational",
+            "navigational instrument",
+            "watercolour"
+        ],
+        "materials": "Watercolour and pencil on paper"
+    },
+    {
+        "__typename": "Standalone",
+        "object_goya_id": "121",
+        "title": "Entertainment and storage are convenient and fast",
+        "type": "",
+        "date": "",
+        "websiteLink": "/sketch/your-circumspection-disclosed-1999_2/",
+        "images": [
+            {
+                "low": "/Gearate/images/4.jpg",
+                "high": "/Gearate/images/4.jpg"
+            }
+        ],
+        "tags": []
+    },
+    {
+        "__typename": "Artwork",
+        "object_goya_id": "3092",
+        "title": "Digital payments transform the experience",
+        "type": "",
+        "date": "",
+        "websiteLink": "/artwork/upwelling-radiance-2018/",
+        "images": [
+            {
+                "low": "/Gearate/images/5.jpg",
+                "high": "/Gearate/images/5.jpg"
+            }
+        ],
+        "tags": [
+            "colour emergence",
+            "compositional layers",
+            "driftwood",
+            "transparency"
+        ],
+        "materials": "Coloured glass (light pink, light pink fade, light blue fade, yellow fade), driftwood"
+    },
+    {
+        "__typename": "Artwork",
+        "object_goya_id": "4210",
+        "title": "Reduced manual experience",
+        "type": "",
+        "date": "",
+        "websiteLink": "/artwork/beyond-human-time-2020/",
+        "images": [
+            {
+                "low": "/Gearate/images/6.jpg",
+                "high": "/Gearate/images/6.jpg"
+            }
+        ],
+        "tags": [
+            "climate",
+            "glacier",
+            "melting",
+            "time",
+            "watercolour"
+        ],
+        "materials": "Watercolour and pencil on paper"
+    },
+    {
+        "__typename": "Standalone",
+        "object_goya_id": "186",
+        "title": "TVirtual reality ignores time",
+        "type": "",
+        "date": "",
+        "websiteLink": "/image/at-studio-olafur-eliasson-testing-space-resonates-regardless-of-our-presence-wednesday-2017_2/",
+        "images": [
+            {
+                "low": "/Gearate/images/7.jpg",
+                "high": "/Gearate/images/7.jpg"
+            }
+        ],
+        "tags": []
+    },
+    {
+        "__typename": "Publication",
+        "object_goya_id": "4389",
+        "title": "Fingerprint lock changes the traditional way",
+        "type": "",
+        "date": "",
+        "websiteLink": "/read/emergence-of-an-artwork-2016/",
+        "images": [
+            {
+                "low": "/Gearate/images/8.jpg",
+                "high": "/Gearate/images/8.jpg"
+            }
+        ],
+        "tags": [
+            "emergence",
+            "experience",
+            "experiment",
+            "feel yourself seeing",
+            "space embracer",
+            "transformation",
+            "we"
+        ],
+        "rolesWithNames": [
+            {
+                "name": "Text author",
+                "people": [
+                    "Olafur Eliasson"
+                ]
+            }
+        ]
+    },
+    {
+        "__typename": "Artwork",
+        "object_goya_id": "3910",
+        "title": "Information acceleration",
+        "type": "",
+        "date": "",
+        "websiteLink": "/artwork/colour-mirror-wheel-2019/",
+        "images": [
+            {
+                "low": "/Gearate/images/9.jpg",
+                "high": "/Gearate/images/9.jpg"
+            }
+        ],
+        "tags": [
+            "colour",
+            "colour spectrum",
+            "ellipse",
+            "rainbow",
+            "shifting appearances",
+            "three dimensionality"
+        ],
+        "materials": "Silvered coloured glass (shades of red, orange, yellow, green, blue, indigo, violet), aluminium"
+    },
+    {
+        "__typename": "Artwork",
+        "object_goya_id": "4517",
+        "title": "Time compression",
+        "type": "",
+        "date": "",
+        "websiteLink": "/artwork/situated-absence-navigator-sector-7-2021/",
+        "images": [
+            {
+                "low": "/Gearate/images/10.jpg",
+                "high": "/Gearate/images/10.jpg"
+            }
+        ],
+        "tags": [
+            "circle",
+            "navigational",
+            "navigational instrument",
+            "watercolour"
+        ],
+        "materials": "Watercolour and pencil on paper"
+    },
+    {
+        "__typename": "Standalone",
+        "object_goya_id": "264",
+        "title": "Streaming media acceleration",
+        "type": "",
+        "date": "",
+        "websiteLink": "/video/sarat-maharaj-speaks-about-keatss-ode-on-indolence-life-is-space-2011-11-4512-30-morning-session-ii-2011/",
+        "images": [
+            {
+               "low": "/Gearate/images/1.jpg",
+                "high": "/Gearate/images/1.jpg"
+            }
+        ],
+        "tags": [
+            "",
+            "cosmos",
+            "heightened awareness"
+        ]
+    },
+    {
+        "__typename": "Artwork",
+        "object_goya_id": "2493",
+        "title": "The radio experience is diminished",
+        "type": "",
+        "date": "",
+        "websiteLink": "/artwork/leaving-and-returning-2015/",
+        "images": [
+            {
+                 "low": "/Gearate/images/2.jpg",
+                "high": "/Gearate/images/2.jpg"
+            }
+        ],
+        "tags": [
+            "ascending, descending",
+            "emergence",
+            "optical device",
+            "seeing yourself small and upside down",
+            "sequence"
+        ],
+        "materials": "Partially silvered crystal spheres, partially gilded crystal spheres, acrylic paint (black), stainless steel"
+    },
+    {
+        "__typename": "Artwork",
+        "object_goya_id": "3253",
+        "title": "Information storage and exchange are accelerated",
+        "type": "",
+        "date": "",
+        "websiteLink": "/artwork/flatland-light-2018/",
+        "images": [
+            {
+                 "low": "/Gearate/images/3.jpg",
+                "high": "/Gearate/images/3.jpg"
+            }
+        ],
+        "tags": [
+            "dichromatic effect",
+            "luminous",
+            "quasi brick"
+        ],
+        "materials": "Colour-effect filter glass (red, green), stainless steel, fluorescent light, ballast, paint (black), cable"
+    },
+    {
+        "__typename": "Publication",
+        "object_goya_id": "2485",
+        "title": "Entertainment and storage are convenient and fast",
+        "type": "",
+        "date": "",
+        "websiteLink": "/publication/sospensione-1999/",
+        "images": [
+            {
+                 "low": "/Gearate/images/4.jpg",
+                "high": "/Gearate/images/4.jpg"
+            }
+        ],
+        "tags": [
+            "limited edition"
+        ],
+        "rolesWithNames": [
+            {
+                "name": "Text author",
+                "people": [
+                    "Olafur Eliasson"
+                ]
+            }
+        ]
+    },
+    {
+        "__typename": "Artwork",
+        "object_goya_id": "1384",
+        "title": "Digital payments transform the experience",
+        "type": "",
+        "date": "",
+        "websiteLink": "/artwork/vortex-for-lofoten-1999/",
+        "images": [
+            {
+                 "low": "/Gearate/images/5.jpg",
+                "high": "/Gearate/images/5.jpg"
+            }
+        ],
+        "tags": [
+            "centripetal force",
+            "constructed nature",
+            "energy",
+            "moving water",
+            "vortex"
+        ],
+        "materials": "Water, pump, acrylic glass, hose, metal"
+    },
+    {
+        "__typename": "Artwork",
+        "object_goya_id": "4506",
+        "title": "Reduced manual experience",
+        "type": "",
+        "date": "",
+        "websiteLink": "/artwork/situated-absence-navigator-sector-4-2021/",
+        "images": [
+            {
+                 "low": "/Gearate/images/6.jpg",
+                "high": "/Gearate/images/6.jpg"
+            }
+        ],
+        "tags": [
+            "circle",
+            "navigational",
+            "navigational instrument",
+            "watercolour"
+        ],
+        "materials": "Watercolour and pencil on paper"
+    },
+    {
+        "__typename": "Artwork",
+        "object_goya_id": "532",
+        "title": "TVirtual reality ignores time",
+        "type": "",
+        "date": "",
+        "websiteLink": "/artwork/the-large-glacier-surfer-2007/",
+        "images": [
+            {
+                "low": "/Gearate/images/7.jpg",
+                "high": "/Gearate/images/7.jpg"
+            }
+        ],
+        "tags": [
+            "glacier",
+            "ice",
+            "looking up close",
+            "natural phenomenon",
+            "photography",
+            "sequence"
+        ],
+        "materials": "12 b/w prints"
+    },
+    {
+        "__typename": "Exhibition",
+        "object_goya_id": "33",
+        "title": "Fingerprint lock changes the traditional way",
+        "type": "",
+        "date": "",
+        "websiteLink": "/exhibition/your-only-real-thing-is-time-2001/",
+        "images": [
+            {
+                  "low": "/Gearate/images/8.jpg",
+                "high": "/Gearate/images/8.jpg"
+            }
+        ],
+        "duration": "January 14 - April 1, 2001",
+        "location": "Institute of Contemporary Art, Boston, Boston, United States of America"
+    },
+    {
+        "__typename": "Publication",
+        "object_goya_id": "2902",
+        "title": "Information acceleration",
+        "type": "",
+        "date": "",
+        "websiteLink": "/publication/riverbed-louisiana-museum-of-modern-art-/",
+        "images": [
+            {
+                  "low": "/Gearate/images/9.jpg",
+                "high": "/Gearate/images/9.jpg"
+            }
+        ],
+        "tags": [],
+        "rolesWithNames": [
+            {
+                "name": "Editor",
+                "people": [
+                    "Anna Engberg-Pedersen",
+                    "Michael Juul Holm"
+                ]
+            }
+        ]
+    },
+    {
+        "__typename": "Publication",
+        "object_goya_id": "4366",
+        "title": "Time compression",
+        "type": "",
+        "date": "",
+        "websiteLink": "/read/telephone-relay-/",
+        "images": [
+            {
+                 "low": "/Gearate/images/10.jpg",
+                "high": "/Gearate/images/10.jpg"
+            }
+        ],
+        "tags": [
+            "body in movement",
+            "climate",
+            "community",
+            "compassion",
+            "constructed nature",
+            "",
+            "doing things with words",
+            "empathy",
+            "perceiving space",
+            "raising awareness",
+            "surroundings",
+            "uncertainty"
+        ],
+        "rolesWithNames": [
+            {
+                "name": "Text author",
+                "people": [
+                    "Olafur Eliasson",
+                    "Niels Albertsen",
+                    "Lone Frank",
+                    "Connie Hedegaard",
+                    "Steen Koerner",
+                    "Timothy Morton",
+                    "Ursula Munch Petersen",
+                    "Tor Nørretranders",
+                    "Andreas Roepstorff",
+                    "Prof. Minik Rosing",
+                    "Pireeni Sundaralingam",
+                    "Inger Thormann",
+                    "Henrik Vibskov"
+                ]
+            }
+        ]
+    }
+    
+]

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="./p8/p5.js"></script>
+    <script src="./p8/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./p8/style.css">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400&display=swap" rel="stylesheet">
+
+  </head>
+
+  <style>
+     body {
+
+font-family: 'Bai Jamjuree', sans-serif;
+overflow: hidden;
+background: linear-gradient(to bottom, #c9dde4, white);
+overflow-y: hidden;
+}
+.tab {
+  position: absolute;
+    /* 设置子元素为绝对定位 */
+    top: 5%;
+    left: 50%;
+    /* 距离左侧50% */
+    transform: translate(-50%, -5%);
+width: 80%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+margin: 0 auto;
+/* margin-top: 50px; */
+font-size: 30px;
+
+/* height:50px;
+background: linear-gradient(to bottom, #c9dde4, white); */
+
+}
+.center-image {
+    position: absolute;
+    /* 设置子元素为绝对定位 */
+    top: 2%;
+    /* 距离顶部50% */
+    left: 50%;
+    /* 距离左侧50% */
+    transform: translate(-50%, -2%);
+    /* 通过平移实现居中 */
+    width: 207px;
+    height: 59px
+  }
+.zz {
+    position: absolute;
+    /* 设置子元素为绝对定位 */
+    top: 0;
+    /* 距离顶部50% */
+    left: 50%;
+    /* 距离左侧50% */
+    transform: translate(-50%, 0);
+    /* 通过平移实现居中 */
+    width: 100vw;
+    /* height: 59px */
+  }
+  </style>
+  <body>
+
+    <img src="./p8/vv.png"  class="zz"  alt="">
+    <div class="image-container">
+       
+      <img onclick="window.location.href='index.html'" src="./assets/logo.png" alt="Image 3" class="center-image" />
+    </div>
+
+
+    <div class="tab">
+      <div onclick="window.location.href='p2.html'">About</div>
+      <div onclick="window.location.href='p3.html'" >Gallery</div>
+    </div>
+    <script src="./p8/sketch.js"></script>
+  </body>
+</html>

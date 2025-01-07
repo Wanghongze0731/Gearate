@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="./p10/p5.js"></script>
+    <script src="./p10/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./p10/style.css">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400&display=swap" rel="stylesheet">
+  </head>
+  <style>
+       body {
+      font-family: 'Bai Jamjuree', sans-serif;
+      /* margin: 0px;
+      height: 100vh;
+      border: none;
+      background: linear-gradient(to bottom, #c9dde4, white);
+      overflow-y: hidden; */
+    }
+    .center-image {
+    position: absolute;
+    /* 设置子元素为绝对定位 */
+    top: 50px;
+    /* 距离顶部50% */
+    left: 50px;
+    /* 距离左侧50% */
+    /* transform: translate(-50%, -8%); */
+    /* 通过平移实现居中 */
+    width: 207px;
+    height: 59px
+  }
+   .tab{
+
+
+    position: absolute;
+    /* 设置子元素为绝对定位 */
+    top: 55px;
+    /* 距离顶部50% */
+    left: 300px;
+
+   }
+  .image-container{
+
+    display: flex;
+    flex-direction: row;
+
+
+  }
+  </style>
+  <body>
+    <div class="image-container">
+       
+      <img onclick="window.location.href='index.html'" src="./assets/logo.png" alt="Image 3" class="center-image" />
+    
+      <div class="tab">
+        <div onclick="window.location.href='p2.html'">About</div>
+        <div  style="margin-top:10px" onclick="window.location.href='p3.html'" >Gallery</div>
+      </div>
+    </div>
+
+
+   
+    <script src="./p10/sketch.js"></script>
+  </body>
+</html>

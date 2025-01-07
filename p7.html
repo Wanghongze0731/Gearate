@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Bai Jamjuree', sans-serif;
+      margin: 0px;
+      height: 100vh;
+      background: linear-gradient(to bottom, #c9dde4, white);
+      overflow-y: hidden;
+    }
+
+    .container {
+      max-width: 100vw;
+      margin: auto;
+      text-align: center;
+    }
+
+    canvas {
+      /* border: 1px solid black; */
+      width: 100%;
+      height: 100%;
+      position: absolute;
+
+      /* 设置子元素为绝对定位 */
+      top: 50%;
+      /* 距离顶部50% */
+      left: 50%;
+      /* 距离左侧50% */
+      transform: translate(-50%, -50%);
+
+      z-index: -1;
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="app" class="container">
+    <div class="image-container">
+      <img src="./assets/left.png" alt="Image 1" class="left-image" />
+      <img src="./assets/right.png" alt="Image 2" class="right-image" />
+      <img onclick="window.location.href='index.html'" src="./assets/logo.png" alt="Image 3" class="center-image" />
+    </div>
+
+
+    <div class="tab">
+      <div onclick="window.location.href='p2.html'">About</div>
+      <div onclick="window.location.href='p3.html'" >Gallery</div>
+    </div>
+
+    <img src="./assets/tv1.gif" alt="Image 2" id="ggif" onclick="changeGif()" class="pgif" />
+    <div id="txt" style="width:200px;margin-left:150px;margin-top:20px;text-align: left;line-height: 1.5; /* 设置行间距 */">
+
+
+      <div class="tg">POINT/</div>
+      <div class="tg">PATH/</div>
+      <div class="tg">SPACE/</div>
+      <div class="tg zt">INFORMATION/</div>
+      <div>Flux</div>
+      <div>Accelerate</div>
+      <div>Task switching and information overload.</div>
+      <div>15:32</div>
+      <div>Time is like sand in the hourglass, passing silently.</div>
+      <div class="tg zt">INCIDENT/</div>
+      <div>Keep time.</div>
+      <div>Time difference value.</div>
+      <div>Sense of time experience.</div>
+      <div class="tg zt">VIRTUAL SPACE/</div>
+      <div>113x22</div>
+      <div>X:45,Y:118</div>
+      <div>Time squeeze</div>
+      <div>Continuous confusion</div>
+      <div>"Not enough time"</div>
+      <div>The sense of compressed space.</div>
+
+    </div>
+
+    <canvas id="myCanvas" width="1920" height="1080"></canvas>
+
+
+
+  </div>
+
+  <script>
+    let b = 0
+
+    function changeGif() {
+
+      if (b == 0) {
+
+
+        document.getElementById("ggif").src = "./assets/tv2.gif"
+        document.getElementById("txt").style.display = "block"
+        document.getElementById("myCanvas").style.display = "none"
+
+
+        // document.addEventListener("DOMContentLoaded", function() {
+    const divs = document.querySelectorAll('#txt > div');
+    let delay = 0;
+
+    divs.forEach((div) => {
+        // 设置初始样式
+        // div.style.position = 'absolute';
+        div.style.paddingLeft = window.innerWidth+"px"; // 从右侧外部开始
+      //  console.log(window.innerWidth)
+        setTimeout(() => {
+            div.style.transition = 'padding-left 2s ease'; // 添加过渡效果
+            div.style.paddingLeft = '0'; // 移动到可见区域
+        }, delay);
+        delay += 100; // 每个 div 之间的延迟
+    });
+// });
+
+
+
+        b = 1
+      }
+      else {
+
+
+        document.getElementById("ggif").src = "./assets/tv1.gif"
+      document.getElementById("myCanvas").style.display = "block"
+          document.getElementById("txt").style.display = "none"
+
+        b = 0
+      }
+
+
+
+    }
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    // 设置高分辨率
+    const scale = window.devicePixelRatio; // 获取设备像素比
+
+    const strings = [
+      "The rapid flow of time changes the senses.",
+      "Time is like sand in the hourglass, passing silently, taking away the moments and memories.",
+      "Task switching.",
+      "Time is like sand in the hourglass, passing silently, taking away the moments and memories.",
+      "\"Not enough time\"",
+      "July",
+      "15:32",
+      "Task switching and information overload.",
+      "Every second seems to remind us that time is the most ruthless judge, and it will not stop for anyone.",
+      "In modern society, especially in the information and digital age.",
+      "5/13",
+      "Digital age.",
+      "Stop time.",
+      "2025",
+      "It can be caused by constant task switching and information overload.",
+      "Time is like sand in the hourglass, passing silently.",
+      "Time never waits.",
+      "113x22",
+      "It can be caused by constant task switching and information overload.",
+      "The fast pace of life.",
+      "Time is like sand in the hourglass, passing silently.",
+      "Time passes quickly.",
+      "Many people feel that time is passing faster than before.",
+      "Flux"
+    ];
+
+
+    const particles = strings.map(str => ({
+      text: str,
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      dx: (Math.random() * 2 - 1) * 2, // 水平速度
+      dy: (Math.random() * 2 - 1) * 2  // 垂直速度
+    }));
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        ctx.fillText(p.text, p.x, p.y);
+        p.x += p.dx;
+        p.y += p.dy;
+
+        // 碰到边缘反弹
+        if (p.x < 0 || p.x > canvas.width) {
+          p.dx = -p.dx;
+        }
+        if (p.y < 0 || p.y > canvas.height) {
+          p.dy = -p.dy;
+        }
+      });
+      requestAnimationFrame(draw);
+    }
+
+    ctx.font = '20px Bai Jamjuree, sans-serif';
+    draw();
+  </script>
+
+</body>
+
+<style>
+  .left-image {
+
+    object-fit: cover;
+    /* 保持图片比例并覆盖容器 */
+
+    height: 100vh;
+
+    position: absolute;
+    top: 0px;
+    left: 0px
+  }
+  #txt{
+    display: none;
+  }
+  .tg {
+
+    font-size: 24px;
+  }
+
+  .zt {
+    margin-top: 25px;
+  }
+
+  .center-image {
+    position: absolute;
+    /* 设置子元素为绝对定位 */
+    top: 2%;
+    /* 距离顶部50% */
+    left: 50%;
+    /* 距离左侧50% */
+    transform: translate(-50%, -2%);
+    /* 通过平移实现居中 */
+    width: 207px;
+    height: 59px
+  }
+
+
+  .tab {
+
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 30px;
+
+
+  }
+
+  .pgif {
+    width: 600px;
+    height: 451px;
+    position: absolute;
+    top: 250px;
+    right: 120px;
+  }
+
+  .right-image {
+    object-fit: cover;
+    /* 保持图片比例并覆盖容器 */
+
+    height: 100vh;
+
+    position: absolute;
+    top: 0px;
+    right: 0px
+  }
+</style>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400&display=swap" rel="stylesheet">
+    <script src="vue@2.js"></script>
+    <style>
+        body {
+            font-family: 'Bai Jamjuree', sans-serif;
+            margin: 0px;
+            height: 100vh;
+            background: linear-gradient(to bottom, #c9dde4, white);
+            overflow-y: hidden;
+        }
+        .container {
+            max-width: 100vw;
+            margin: auto;
+            text-align: center;
+        }
+
+
+        .zp{
+
+
+            /* font-family: 'Bai Jamjuree', sans-serif;
+          font-size: 36px; */
+        }
+        input {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app" class="container">
+    <div class="image-container" style="z-index: -1;">
+        <img src="./assets/left.png" alt="Image 1" class="left-image" />
+        <img src="./assets/right.png" alt="Image 2" class="right-image" />
+        <img 
+        :src="gifsrc" 
+        alt="Image 3" 
+        @click="changeGif" 
+        id="vb" 
+        :class="gifsrc === './assets/p1.gif' ? 'center-image' : 'center-image2'" 
+      />
+      </div>
+
+
+      <div class="tab" style="z-index: 9999;">
+
+
+       
+        <div @click="go('p2')"  class="zp">About</div>
+        <div @click="go('p3')" class="zp">Gallery</div>
+    </div>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            gifsrc: './assets/p1.gif',
+            userInput: '',
+            displayText: '',
+            ff:true
+        },
+        methods: {
+            changeGif() {
+                this.gifsrc = './assets/p2.gif';
+                // document.getElementById("vb").style.bottom=0
+                if(sessionStorage.getItem("kk")!="1"){
+
+                   
+                setTimeout(function() {
+                    this.ff=false
+
+
+                    sessionStorage.setItem("kk","1")
+                window.location.href = 'p4.html';
+                
+            }, 3000); // 3000毫秒 = 3秒
+
+        }
+            },
+
+            go(page){
+
+            console.log(page)
+
+
+
+                window.location.href = page+".html";
+
+            }
+        }
+    });
+</script>
+
+</body>
+
+<style>
+
+
+.left-image {
+ 
+  object-fit: cover; /* 保持图片比例并覆盖容器 */
+ 
+  height:100vh;
+
+  position: absolute;
+  top:0px;
+  left:0px
+
+
+}
+
+.center-image {
+    position: absolute; /* 设置子元素为绝对定位 */
+    top: 50%;           /* 距离顶部50% */
+    left: 50%;          /* 距离左侧50% */
+    transform: translate(-50%, -50%); /* 通过平移实现居中 */
+    width:1200px;
+    /* height:540px */
+ 
+ 
+}
+
+
+.center-image2 {
+    position: absolute; /* 设置子元素为绝对定位 */
+    bottom: 0;           /* 距离顶部50% */
+    left: 45%;          /* 距离左侧50% */
+    transform: translate(-45%, 0); /* 通过平移实现居中 */
+    width:1200px;
+    /* width:960px;
+    height:540px */
+ 
+ 
+}
+
+
+.tab{
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size:30px;
+    z-index:999;
+
+
+}
+
+.right-image {
+    object-fit: cover; /* 保持图片比例并覆盖容器 */
+ 
+ height:100vh;
+
+ position: absolute;
+ top:0px;
+ right:0px
+}
+
+
+</style>
+</html>

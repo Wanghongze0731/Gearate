@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400&display=swap" rel="stylesheet">
+    <script src="typed.umd.js"></script>
+    <style>
+        body {
+          font-family: 'Bai Jamjuree', sans-serif;
+            margin: 0px;
+            height: 100vh;
+            background: linear-gradient(to bottom, #c9dde4, white);
+            overflow-y: hidden;
+        }
+        .container {
+            max-width: 100vw;
+            margin: auto;
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app" class="container">
+    <div class="image-container">
+        <img src="./assets/left.png" alt="Image 1" class="left-image" />
+        <img src="./assets/right.png" alt="Image 2" class="right-image" />
+        <img onclick="window.location.href='index.html'" src="./assets/logo.png" alt="Image 3" class="center-image" />
+      </div>
+
+
+      <div class="tab">
+        <div onclick="window.location.href='p2.html'" >About</div>
+        <div onclick="window.location.href='p3.html'" >Gallery</div>
+      </div>
+
+
+      <div style="width:35%;margin:20px auto;font-size: 10px;">
+        Humans typically spend a lot of time conceiving, organizing, revising, and optimizing sentences or text content. The AI-generated text is almost instantaneous, which makes people feel that the time to create is compressed and "deprived". In the process of using AI to generate articles, the "process" of creation becomes timeless - only quick results are left. This mode of instant gratification removes the sense of time flow and immersion that people feel during the writing process.
+      </div>
+
+
+      <div style="width:70%;margin:20px auto;margin-top:60px;   text-align: left; font-family: 'Courier New', Courier, monospace;font-weight: 600;font-size: 30px;">
+      <span  id="kk"></span>
+
+    </div>
+</div>
+
+<script>
+    var typed = new Typed('#kk', {
+      strings: ['In modern society, especially in the age of information and digital, many people feel that time passes faster than before. This feeling usually appears in the fast-paced life and work environment, people in the constant busy and pressure, often have the feeling of "time is not enough". This sense of acceleration is due to the time-compression effect of high performance and instant gratification, and may also be caused by constant task switching and information overload.Immediacy and fragmented time experience: In the digital age, especially with the popularity of smartphones and social media, the sense of time experience has become more fragmented and instantaneous. People can access information, reply to information, and complete tasks anytime and anywhere, and this sense of time is constantly switched and immediate response easily leads to the perception of "time compression" and time distortion. For example, switching tasks multiple times in a short period of time may feel like less time, but it can also cause anxiety and distraction.'],
+      typeSpeed: 30,
+    });
+  </script>
+
+</body>
+
+<style>
+
+
+.left-image {
+ 
+  object-fit: cover; /* 保持图片比例并覆盖容器 */
+ 
+  height:100vh;
+
+  position: absolute;
+  top:0px;
+  left:0px
+
+
+}
+
+.center-image {
+    position: absolute; /* 设置子元素为绝对定位 */
+    top: 2%;           /* 距离顶部50% */
+    left: 50%;          /* 距离左侧50% */
+    transform: translate(-50%, -2%); /* 通过平移实现居中 */
+    width:207px;
+    height:59px
+ 
+ 
+}
+
+
+.tab{
+
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size:30px;
+
+
+}
+
+.right-image {
+    object-fit: cover; /* 保持图片比例并覆盖容器 */
+ 
+ height:100vh;
+
+ position: absolute;
+ top:0px;
+ right:0px
+}
+
+
+</style>
+</html>

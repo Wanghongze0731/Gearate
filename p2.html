@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400&display=swap" rel="stylesheet">
+  <script src="typed.umd.js"></script>
+  <style>
+    body {
+      font-family: 'Bai Jamjuree', sans-serif;
+      margin: 0px;
+      height: 100vh;
+      background: linear-gradient(to bottom, #c9dde4, white);
+      overflow-y: hidden;
+
+     
+    }
+    @font-face {
+  font-family: 'MyCustomFont'; /* 自定义字体名称 */
+  src: url('./p2/PPEditorialNew-Italic.otf') format('opentype'); /* 字体文件路径 */
+  font-weight: normal; /* 字体粗细 */
+  font-style: normal; /* 字体样式 */
+}
+    @font-face {
+  font-family: 'MyCustomFont1'; /* 自定义字体名称 */
+  src: url('./p2/hr.ttf') format('opentype'); /* 字体文件路径 */
+  font-weight: normal; /* 字体粗细 */
+  font-style: normal; /* 字体样式 */
+}
+
+
+
+    .container {
+      max-width: 100vw;
+      margin: auto;
+      text-align: center;
+    }
+
+    input {
+      padding: 10px;
+      width: 80%;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="app" class="container">
+
+
+   
+
+
+    <div style="width:80%;margin:20px auto;letter-spacing: 0.08em;height:690px;overflow-y: scroll;" id="ppp" class="zk">
+
+
+      
+      <!-- <div id="zzz" style="position: sticky;display:none; top: 0; height: 150px; background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); z-index: 1;"></div> -->
+      Based on the theoretical background of <span class="pk" data-img="./p2/001.jpg">"destroying space with time" </span>. The time saved
+      through technology makes it impossible to experience time again. The <span class="pk" data-img="./p2/002.jpg">shortening
+      </span> of time deprives the experience of time, and humans cannot regain the <span class="pk" data-img="./p2/003.jpg">lost experience</span> of time in
+      space.Space represents the common elements of certain so-called <span class="pk" data-img="./p2/004.jpg">representational</span> sensations. Time and Free Will:
+      On the Direct Data of Consciousness.
+    </div>
+
+
+    <div id="imagePopup" style="display:none; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:1000;">
+      <img id="popupImage" src="" alt="Image" style="max-width:600px; max-height:600px; ">
+  </div>
+
+
+  <img src="./p2/vv.png" id="zzz" alt="" style="position: absolute;display:none; top: 0; width:100%;height:200px">
+  <div class="image-container">
+    <img src="./assets/left.png" alt="Image 1" class="left-image" />
+    <img src="./assets/right.png" alt="Image 2" class="right-image" />
+    <img   onclick="window.location.href='index.html'"   src="./assets/logo.png" alt="Image 3" class="center-image" />
+  </div>
+
+
+  <div class="tab">
+    <div onclick="window.location.href='p2.html'">About</div>
+    <div onclick="window.location.href='p3.html'" >Gallery</div>
+  </div>
+  </div>
+
+  <script>
+
+
+const scrollContainer = document.getElementById('ppp');
+    const gradientEffect = document.getElementById('zzz');
+
+    scrollContainer.addEventListener('scroll', function() {
+        if (scrollContainer.scrollTop > 0) {
+            gradientEffect.style.display = 'block'; // 显示渐变
+        } else {
+            gradientEffect.style.display = 'none'; // 隐藏渐变
+        }
+    });
+  document.querySelectorAll('.pk').forEach(function(element) {
+    element.addEventListener('mouseenter', function() {
+        const imgSrc = this.getAttribute('data-img');
+        const popupImage = document.getElementById('popupImage');
+        const imagePopup = document.getElementById('imagePopup');
+        
+        popupImage.src = imgSrc;
+        imagePopup.style.display = 'block';
+    });
+
+    element.addEventListener('mouseleave', function() {
+        const imagePopup = document.getElementById('imagePopup');
+        imagePopup.style.display = 'none';
+    });
+});
+
+  </script>
+
+</body>
+
+<style>
+  .zk {
+
+
+    font-family: 'MyCustomFont1', sans-serif; 
+    /* 设置字体为Helvetica Neue */
+    font-weight: 900;
+    /* 设置字体粗细为Regular */
+    font-size: 80px;
+    /* 设置字号为110pt */
+    text-align: left;
+
+    position: absolute;
+    /* 设置子元素为绝对定位 */
+    top: 20%;
+    /* 距离顶部50% */
+    left: 50%;
+    /* 距离左侧50% */
+    transform: translate(-50%, -20%);
+
+
+
+  }
+
+
+  .mkm {
+    position: relative;
+    margin-top: 0px;
+    
+    content: '';
+    
+    height: 50px;                /* 渐变的高度 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* 从白色到透明的渐变 */
+    z-index: 1;                 /* 确保在盒子上方 */
+}
+
+  .zk::-webkit-scrollbar { width: 0 !important }
+
+
+.zk { -ms-overflow-style: none; }
+
+
+.zk { overflow: -moz-scrollbars-none; }
+
+  .pk {
+
+
+    font-family: 'MyCustomFont', sans-serif; 
+    /* 设置字体样式为Italic */
+    color: rgb(93,167,232);
+
+    /* text-decoration: underline; */
+    font-size: 70px; 
+  }
+
+  .left-image {
+
+    object-fit: cover;
+    /* 保持图片比例并覆盖容器 */
+
+    height: 100vh;
+
+    position: absolute;
+    top: 0px;
+    left: 0px
+  }
+
+  .center-image {
+    position: absolute;
+    /* 设置子元素为绝对定位 */
+    top: 2%;
+    /* 距离顶部50% */
+    left: 50%;
+    /* 距离左侧50% */
+    transform: translate(-50%, -2%);
+    /* 通过平移实现居中 */
+    width: 207px;
+    height: 59px
+  }
+
+
+  .tab {
+    position: absolute;
+    /* 设置子元素为绝对定位 */
+   
+width: 80%;
+top: 5%;
+    /* 距离顶部50% */
+    left: 50%;
+    /* 距离左侧50% */
+    transform: translate(-50%, -5%);
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0 auto;
+    margin-top: 50px; */
+    font-size: 30px;
+
+
+  }
+
+  .right-image {
+    object-fit: cover;
+    /* 保持图片比例并覆盖容器 */
+
+    height: 100vh;
+
+    position: absolute;
+    top: 0px;
+    right: 0px
+  }
+</style>
+
+</html>
