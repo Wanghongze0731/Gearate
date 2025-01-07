@@ -40,12 +40,15 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  // createCanvas(windowWidth,windowHeight);
+  createCanvas(1920,1080);
   imageMode (CENTER)
   textFont("Courier New"); // 设置字体
   textSize(18); // 设置字体大小
   textStyle(BOLD); // 设置字体粗细
   // strokeWeight(3)
+
+  
   grid.push(new ImageCell(90,957, images[3],3, 3));
   grid.push(new ImageCell(92,430, images[4],4, 4));
   grid.push(new ImageCell(95,737, images[1],1, 1));
@@ -80,12 +83,23 @@ function setup() {
   grid.push(new ImageCell(1800,967, images[7],7,7));
 
 
+  
+  const originalWidth = 1920;
+  const originalHeight = 1080;
 
+  const scaleX = width / originalWidth;
+  const scaleY = height / originalHeight;
+
+  grid.forEach(cell => {
+      cell.x = cell.x * scaleX+100;
+      cell.y = cell.y * scaleY+100;
+  });
 
   
 }
 
 function draw() {
+  
 
   
   // 显示logo
@@ -94,7 +108,7 @@ function draw() {
    fill(0)
   
   //  text(mouseX+":"+mouseY,mouseX,mouseY)
-
+ 
     for (let cell of grid) {
         cell.display();
       }
