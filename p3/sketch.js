@@ -537,7 +537,7 @@ function draw() {
   // 显示logo
   image(logo, 0, 0,width,height);
 
-   text (mouseX+":"+mouseY,mouseX,mouseY)
+//    text (mouseX+":"+mouseY,mouseX,mouseY)
   for (let i = 0; i < bm.length; i++) {
 
 
