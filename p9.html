@@ -19,15 +19,22 @@
         }
         .tab {
 
+            position: absolute;
+    /* 设置子元素为绝对定位 */
+    top: 5%;
+    left: 50%;
+    /* 距离左侧50% */
+    transform: translate(-50%, -5%);
+
 width: 80%;
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
 margin: 0 auto;
-margin-top: 50px;
+/* margin-top: 50px; */
 font-size: 30px;
-padding-top: 50px;
+/* padding-top: 5%; */
 
 
 }
@@ -37,11 +44,11 @@ padding-top: 50px;
         .center-image {
     position: absolute;
     /* 设置子元素为绝对定位 */
-    top: 8%;
+    top: 2%;
     /* 距离顶部50% */
     left: 50%;
     /* 距离左侧50% */
-    transform: translate(-50%, -8%);
+    transform: translate(-50%, -2%);
     /* 通过平移实现居中 */
     width: 207px;
     height: 59px

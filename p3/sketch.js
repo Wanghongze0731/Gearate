@@ -508,6 +508,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
+//   createCanvas(1920,1080);
   for (let i = 1; i <= 7; i++) {
     let videoz = createVideo(`./p3/video${i}.mp4`);
     videoz.hide()
@@ -536,7 +537,7 @@ function draw() {
   // 显示logo
   image(logo, 0, 0,width,height);
 
-//    text (mouseX+":"+mouseY,mouseX,mouseY)
+   text (mouseX+":"+mouseY,mouseX,mouseY)
   for (let i = 0; i < bm.length; i++) {
 
 
